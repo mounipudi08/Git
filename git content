@@ -1,0 +1,146 @@
+power of going back to an version that is called version control
+to achieve this we use some system is called a version control system
+So example if you are building a project u will be saving that file multiple times
+u will not replace the older project 
+so let's say you have a software with X number of features
+so u got first two features in the first version
+then u got the third feature on the second version
+And at any given point u can go back to previous version
+u have multiple people working in the same project
+How do you collabrate?
+so u will get those features with the help of version control
+we need a system --> version control system
+we can categorize into three parts 
+Local version control - And in my own particular machine i am creating different versions 
+may be having a folder inside 
+if our system fails we can't simply rely on local copy
+
+2. Centeralized Version Control System(CVCS)
+so what you will do is you will use a central repository not the local one , but a remote one 
+so all this machines which you are working on in different locations in the world,
+u will be having a centeralized version control system.
+now at this point ,everytime you want to make a change, you have to get the copy from the centralized 
+get the copy from the ceneteralized system ,make the changes in your machine , and then you have to save it on the
+centeralized version
+Advantages
+if you are working in the 5 in the group 
+so let's say when you commmit something to centeralized server
+The problem is everything is stored on a centeral system ,right?
+what if centeral server says i am done 
+i am not going to start again
+ur data is gone now 
+so that's the problem with the centeralized version system
+now that's where we have to look for an alternative where you should be able to have a copy 
+on your machine as well, and not just the current version.
+you should have the history as well , because in the centeralized version, even if your server goes
+down , at least you have a local copy of the current version.
+yes you have it but you don't want just current version.
+what we want is history
+and that's where you can use something called a distributed version control system,
+3)distributed version control system(DVCS)
+u will have a local copy but not just the current version 
+you will have the entire commit history
+so let's say you have created version one , version two version three
+everything will be present in your local machine as well
+repository --> (push,pull)
+working copy --> (update,commit)
+It will be easier for you to work on the git software 
+so basically git is a distributed which means you will have a local copy 
+
+History of git
+simple to use
+fast
+Branching
+Fully distributed
+
+Git setup
+
+check --> git --version
+So whenever someone pushes the code on the server, you should know who is doing it.
+that's where you need to have the own configuration
+the way you check git config
+git config --global --list
+git config --global user.name "mounika"
+git config --global user.email 
+
+let's try to use git 
+
+I can use git to create different versions of it  
+and i will be committing it 
+I will also push some public repository
+
+git basically says, you give me the file , you give me the statements , I will take care of it
+How do you store that the file with git 
+how do you work  with git to merge different files
+Internal command prompt of the vs code --> Terminal 
+you have to git know that , hey you know i want to track my progress , I want to commit,I want to create different versions
+
+other that working directory 
+apart from working directory we have something called a staging area
+we have staging area --> is a place where git knows
+In your project you have lets say ten files out of ten files , you have five files which you want git to track
+now how will you tell that 
+whatever tell this in staging area -- please take care of it
+other files you can ignore that 
+apart from that we have something called a commit history
+evrytime u commit , u create one version basically
+if u want to create your git repository local repository ,you have to something called init
+u create local repository by using this command --> git init
+git status --> on branch master
+git init --> will create empty repository
+if i  delete --> .git -->  that repository deleted
+git init -b main  --> main branch
+git commit --
+working directory --> where u can edit the files 
+if u want git to handle --> that will add into staging area
+Now the thing is ,if u want to commit some thing , if you want git to take care of some files
+for different versions , you have to give that to git
+when u want to add anything to the staging area --> git add file.txt
+with the help of git log we can see all the initial commits
+git commit -m "My first commit"
+every time u create a file it is into working directory and then you stage it 
+so that goes into the staging area 
+and then from staging area we do commit so that it will go to the local commits
+change --> add -->  commit --> 
+git diff --> changes there have been few changes , the number of lines 
+It says it is untracked 
+I want to know what changes i have made --> git diff --staged
+git diff --> which is differences
+and if your file into staging area then u have to use hypen hyphen staged to check changes
+
+git remove file 
+
+git add . --> now dot means you can add all the files in the staging area
+A --> all the files being tracked
+git rm --cached creds.txt
+now it is untracked and you can happily delete now 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      
+                  
+
+
+
